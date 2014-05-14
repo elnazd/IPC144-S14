@@ -1,0 +1,2 @@
+/*This program will ask the user to enter a number.
+  it will then print out what the last digit of that number is.*/
