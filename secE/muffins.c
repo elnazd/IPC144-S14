@@ -21,4 +21,15 @@ int main(void){
 	                   //tax
 	float hst;
     float totalCost;   //total cost of muffins and taxes
+
+    printf("How many muffins would you like? ");
+    scanf("%d",&muffins);
+    muffinCost = muffins * UNITCOST;
+
+
+
+
+
+
+
 }
