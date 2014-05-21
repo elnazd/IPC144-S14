@@ -26,7 +26,12 @@ int main(void){
     scanf("%d",&muffins);
     muffinCost = muffins * UNITCOST;
 
-
+    if(muffins>=6)
+	totalCost = muffinCost;
+    else
+	totalCost = muffinCost + muffinCost * HSTRATE;
+		
+	printf("The total cost is:%.2f", totalCost);
 
 
 
