@@ -1,5 +1,5 @@
 #include <stdio.h>
-float average(int array[],int size);
+double minMaxAve(int array[],int size,int* min, int* max);
 void printArray(int array[],int size,int maxPerLine);  
 
 int main(){
