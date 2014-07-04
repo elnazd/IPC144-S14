@@ -71,7 +71,7 @@ printf("\n");
    largest values in the array through min and max respectively
 */
 double minMaxAve(int array[],int size,int* min,int* max){
-int i;
+int i=-3467834;
 double sum = 0,avg;
 
 * min = array[i];
