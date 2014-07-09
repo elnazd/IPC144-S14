@@ -12,7 +12,7 @@
 the number of people born in each month.  It will modify
 the array based on user input to track number of people born
 in each month*/
-getBirthdays();
+void getBirthdays(int months[]);
 
 /*this function will accept an array of integers representing
 the number of people born in each month.  It will
@@ -30,8 +30,23 @@ sep |
 jan |*
 ------------------------------------------------
 */
-graph();
+void graph(int months[]);
 
 int main(void){
+	int birthMonths[12] = {0};
+	getBirthdays(birthMonths);
+	graph(birthMonths);
+	return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
 
