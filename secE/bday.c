@@ -39,7 +39,49 @@ int main(void){
 	return 0;
 }
 
+void getBirthdays(int months[]){
+  int month;
+  int peopleCounter=1;
+  //prompt and read month
+  printf("Please enter the month for person # %d (1 to 12, 0 to exit:) ",peopleCounter);
+  scanf("%d",&month);
+  peopleCounter++;
 
+  while(month!=0){
+    //update that count for the month entered
+    int idx=month-1;
+    months[idx]=months[idx]+1;
+    //prompt and read month
+    printf("Please enter the month for person # %d (1 to 12, 0 to exit:) ",peopleCounter);
+    scanf("%d",&month);
+    peopleCounter++;
+  }
+}
+/*given the month in numeric form, this function
+  will print the 3 letter abbreviation for that month
+*/
+void printMonths(int month){
+  char monthText[12][4]={"jan","feb","mar","apr",
+                         "may","jun","jul","aug",
+                         "sep","oct","nov","dec"};
+  int idx=month-1;
+  printf("%s",monthText[idx]);
+}
+void graph(int months[]){
+	int i;
+  int j;
+  //for every month of the year starting in december
+  for(i=11;i>=0;i--){
+  //    print out the month name
+    printMonths(i+1);
+    printf(" |");
+  //    print the number of astericks == to number of people born in that month
+    for(j=0;j<months[i];j++){
+      printf("*");
+    }
+    printf("\n");
+  }
+}
 
 
 

@@ -8,6 +8,6 @@ int main(void){
 	printf("please enter a number: ");
 	scanf("%d",&number);
 	lastDigit = number % 10;
-	printf("the last digit of %d is %d\n",number,lastDigit);
+	printf("The last digit of %d is %d\n",number,lastDigit);
 	return 0;
 }

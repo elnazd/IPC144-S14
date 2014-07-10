@@ -19,24 +19,28 @@ int main(void){
 	graph(birthMonth);
 }
 void getBirthdays(int birthMonth[]){
-	birthMonth[0] = 5;
-	birthMonth[1] = 3;
-	birthMonth[2] = 4;
-	birthMonth[3] = 1;
-	birthMonth[4] = 2;
-	birthMonth[5] = 0;
-	birthMonth[6] = 1;
-	birthMonth[7] = 2;
-	birthMonth[8] = 5;
-	birthMonth[9] = 2;
-	birthMonth[10] = 6;
-	birthMonth[11] = 2;
+   int month;
+   //counter for how many people have been read
+   int numPeople = 0;
+   //loop priming...
+   printf("What month was person 1 born in: (1 to 12, 0 to exit): ");
+   scanf("%d",&month);
+   while(month != 0){
+   	   numPeople++;
+   	   int idx = month-1;
+   	   birthMonth[idx]=birthMonth[idx] +1;
+       //update the count for month
+	   printf("What month was person %d born in: (1 to 12, 0 to exit): ",numPeople +1);
+  	   scanf("%d",&month);
+
+   }
 }
 
 void graph(int birthMonth[]){
 	int i;
-	for(i=0;i<12;i++){
-		printf("%d people were born in month %d\n",
-			birthMonth[i],i+1);
-	}
+    //for every month starting from dec,
+         //print out the month number
+	     //print a bar
+	     //print a bunch of stars based on 
+	     //birthmonth[month]
 }
