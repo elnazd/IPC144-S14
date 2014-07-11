@@ -37,7 +37,22 @@ void getBirthdays(int birthMonth[]){
 }
 
 void graph(int birthMonth[]){
-	int i;
+	int i,j;
+  //2 dimenisional array
+  //but easier to think about this as array
+  //of 12 elements, each of which is a 4 element
+  //char array
+  char monthName[12][15]={ "january" ,"february" ,"march" ,"april" , 
+                          "may", "june" , "july", "august",
+                          "september", "october", "november", "december"};
+  for(i=11;i>=0;i--){
+    printf("%12s", monthName[i]);
+    printf(" |");
+    for(j=0;j<birthMonth[i];j++){
+      printf("*");
+    }
+    printf("\n");
+  }
     //for every month starting from dec,
          //print out the month number
 	     //print a bar
