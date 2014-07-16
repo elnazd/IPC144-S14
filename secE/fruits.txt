@@ -1,3 +1,3 @@
 pear;yellow-green;sweet;0:1.00
 orange;orange;tart;1:1.00
-kiwi;brown;sweetish;3:0.50
+kiwi;brown and green;sweetish;3:0.50
