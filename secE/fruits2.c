@@ -6,10 +6,21 @@ struct Fruit{
 	int quantity;
 	double price;
 };
+void printFruit(struct Fruit* fruitPtr);
 int main(void){
 	FILE* fp=fopen("fruits.txt","r");
 	struct Fruit myfruit;
 	if(fp){
-		fscanf("");
+		fscanf(fp,"%[^;];%[^;];%[^;];%d:%lf\n",
+			myfruit.name,myfruit.colour,myfruit.taste,
+			&myfruit.quantity,&myfruit.price);
+		printFruit(&myfruit);
 	}
 }
+void printFruit(struct Fruit* fruitPtr){
+
+}
+
+
+
+
