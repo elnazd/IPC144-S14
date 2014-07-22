@@ -8,7 +8,8 @@ struct Fruit{
 };
 int main(void){
 	FILE* fp=fopen("fruits.txt","r");
-	
+	struct Fruit myfruit;
 	if(fp){
+		fscanf("");
 	}
 }
