@@ -9,12 +9,19 @@ struct Fruit{
 void printFruit(struct Fruit* fruitPtr);
 int main(void){
 	FILE* fp=fopen("fruits.txt","r");
-	struct Fruit myfruit;
+	struct Fruit myfruit[5];
 	if(fp){
-		fscanf(fp,"%[^;];%[^;];%[^;];%d:%lf\n",
-			myfruit.name,myfruit.colour,myfruit.taste,
-			&myfruit.quantity,&myfruit.price);
-		printFruit(&myfruit);
+		int i=0;
+		int j;
+		while(fscanf(fp,"%[^;];%[^;];%[^;];%d:%lf\n",
+			myfruit[i].name,myfruit[i].colour,myfruit[i].taste,
+			&myfruit[i].quantity,&myfruit[i].price)==5){
+			i++;
+		}
+		for(j=0;j<i;j++){
+			printFruit(&myfruit[i]);
+		}
+
 	}
 }
 void printFruit(struct Fruit* fruitPtr){
