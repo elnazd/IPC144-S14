@@ -1,0 +1,6 @@
+smoked bacon;$1.62:25
+honey bacon;$2.10:25
+super bacon;$9.99:1
+bacon bacon;$5.00:25
+organic bacon;$1.00:25
+amazing bacon with more bacon in bacon;$100.00:50
